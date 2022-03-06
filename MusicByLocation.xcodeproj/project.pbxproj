@@ -86,8 +86,8 @@
 		1A02691627CFBBA5001EF3C8 = {
 			isa = PBXGroup;
 			children = (
-				1A02692427CFBBA5001EF3C8 /* ContentView.swift */,
 				1A02692227CFBBA5001EF3C8 /* MusicByLocationApp.swift */,
+				1A02692427CFBBA5001EF3C8 /* ContentView.swift */,
 				1A02695527CFBCE8001EF3C8 /* Extensions */,
 				1A02692127CFBBA5001EF3C8 /* MusicByLocation */,
 				1A02693227CFBBA9001EF3C8 /* MusicByLocationTests */,

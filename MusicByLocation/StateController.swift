@@ -23,7 +23,7 @@ class StateController: ObservableObject {
         }
         
         DispatchQueue.main.async {
-            self.artistsByLocation = names?.joined(separator: ", ") ?? "error finding artists from your location"
+            self.artistsByLocation = names?.joined(separator: "\n ") ?? "error finding artists from your location"
         }
     }
     
