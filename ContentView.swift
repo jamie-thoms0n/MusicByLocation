@@ -12,16 +12,22 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Form{
-                Text(state.artistsByLocation)
-                    .padding()
+            ScrollView{
+                ForEach(state.artistsByLocation, id: \.self) { artist in
+                    Text(artist)
+                        .padding()
+                }
+                Spacer()
+                
+                } .onAppear(perform: {
+                    state.requestAccessToLocationData()
+                })
+            HStack{
+                Button("Find Music") {
+                    state.findMusic()
             }
-            Spacer()
-            Button("Find Music") {
-                state.findMusic()
-            } .onAppear(perform: {
-                state.requestAccessToLocationData()
-            })
+                Image(systemName: "music.mic.circle")
+            }
         }
         
     }
